@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      const redirect = `/?p=${encodeURIComponent(path)}&q=${encodeURIComponent(query)}&h=${encodeURIComponent(hash)}`;
+      window.location.replace(redirect);
+    </script>
+  </head>
+  <body></body>
+</html>
